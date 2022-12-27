@@ -1,0 +1,102 @@
+/* Mobile Devices (320px or less) */
+@media only screen and (max-width: 320px) {
+
+}
+  
+/* Tablets and Medium-Sized Devices (321px to 768px) */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+
+        align-items: center;
+        justify-content: space-between;   
+    }
+
+    .mobile-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;        
+        padding: 1em 3em;
+    }
+
+    .menu-button {
+        width: 20px;
+        height: 20px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3px;
+    }
+
+    .menu-line {
+        width: 20px;
+        height: 2px;
+        background-color: black;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+
+        margin: 5em 2em;
+    }
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+
+
+    }
+
+    .product-grid-item {
+    }
+
+    .product-image {
+        background-color: var(--color-text);
+        border-radius: 10px;
+        height: 437.5px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product-image img {
+        width: 100%;
+        padding: 0 1em;
+    }
+
+    .product-info {
+        text-align: center;
+        margin-top: 1em;
+    }
+
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        padding: 1em 3em;
+
+        color: var(--color-primary);
+    }
+
+    footer p {
+        font-size: 13.75px;
+        line-height: 1.5em;
+    }
+    
+
+}
