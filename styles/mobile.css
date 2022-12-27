@@ -80,6 +80,11 @@
         font-size: 39px;
     }
 
+    .mobile-menu li:hover, .mobile-menu a:hover {
+        text-decoration: underline;
+    }
+    
+
     .mobile-menu-inner {
         display: flex;
         flex-direction: column;
