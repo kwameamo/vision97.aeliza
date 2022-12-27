@@ -7,9 +7,162 @@
 /* Large Desktop Screens (1201px or more) */
 @media only screen and (min-width: 769px) {
 
-   .mobile-header {
-    display: none;
+   .mobile-header, .mobile-menu {
+      display: none;
    }
    
+
+   header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+
+      align-items: center;
+      justify-content: space-between; 
+      
+      z-index: 10;
+  }
+
+  .desktop-header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      padding: 1em 7em;
+  }
+
+  .desktop-header .logo {
+      display: flex;
+      width: 30%;
+      align-items: center;
+      justify-content: center;
+  }
+
+
+  .left-menu, .right-menu {
+      width: 35%;
+      align-items: center;
+  }
+
+  .left-menu ul, .right-menu ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 5em;
+  }
+
+  .left-menu ul {
+      justify-content: flex-start;
+  }
+
+  .right-menu ul {
+      justify-content: flex-end;
+  }
+
+  .left-menu li, .left-menu a, .right-menu li, .right-menu a {
+      list-style: none;
+      color: var(--color-text);
+      text-decoration: none;
+  }
+
+  .left-menu li:hover, .left-menu a:hover, .right-menu li:hover, .right-menu a:hover {
+      text-decoration: underline;
+  }
+
+  .main-container {
+      display: flex;
+      flex-direction: column;
+
+      margin: 7em 4em;
+  }
+
+  .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-column-gap: 30px;
+      grid-row-gap: 20px;
+
+
+  }
+
+  .product-grid-item {
+  }
+
+  .product-image {
+      background-color: var(--color-text);
+      border-radius: 10px;
+      display: flex;
+
+      aspect-ratio: 4/5;
+
+      align-items: center;
+      justify-content: center;
+
+      overflow: hidden;
+  }
+
+  .hover-image {
+      display: none;
+      opacity: 0;
+      transition: 0.3s ease-in-out;
+      width: 100%;
+  }
+
+  .product-image:hover .top-image {
+      display: none;
+      opacity: 0;
+  }
+
+  .product-image:hover .hover-image {
+      display: block;
+      opacity: 1;
+  }
+
+  .product-image img {
+      width: 100%;
+  }
+
+  .product-info {
+      text-align: center;
+      margin-top: 1em;
+  }
+
+  .product-price {
+      font-size: 14px;
+      margin-top: -5px;
+  }
+
+
+  footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+
+      display: flex;
+      flex-direction: row;
+
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+
+      padding: 1em 1em;
+
+      color: var(--color-primary);
+
+      z-index: 10;
+  }
+
+  footer p {
+      font-size: 13.75px;
+      line-height: 1.5em;
+  }
+
+  footer a {
+   font-size: 2.5em;
+   line-height: 1.5em;
+
+   text-decoration: none;
+   color: var(--color-primary);
+}
 
 }
