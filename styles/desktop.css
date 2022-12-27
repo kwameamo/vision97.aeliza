@@ -99,6 +99,7 @@
       justify-content: center;
 
       overflow: hidden;
+      cursor: pointer;
   }
 
   .hover-image {
@@ -127,8 +128,17 @@
       margin-top: 1em;
   }
 
+  .product-info a {
+      color: var(--color-text);
+      text-decoration: none;
+  }
+
+  .product-info a:hover {
+      text-decoration: underline;
+  }
+
   .product-price {
-      font-size: 14px;
+      font-size: 11px;
       margin-top: -5px;
   }
 
