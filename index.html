@@ -11,17 +11,32 @@
     <title>Vision'97 — Aeliza</title>
 </head>
 <body>
+    <div class="mobile-menu" id="mob-menu">
+        <div class="mobile-menu-inner" onclick="closeMenu()">
+            <ul>
+                <li><a href="#">Ghana Store</a></li>
+                <li><a href="#">Information</a></li>
+                <li><a href="#">Lookbook</a></li>
+                <li><a href="#">Subscribe</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
     <header>
         <div class="mobile-header">
-            <i class="menu-button">
+            <i class="menu-button" onclick="openMenu()">
                 <div class="menu-line"></div>
                 <div class="menu-line"></div>
             </i>
-
-            <img src="images/Vision97LogoW.svg" alt="" width="200px">
+            <a href="#">
+                <img src="images/Vision97LogoW.svg" alt="" width="200px">
+            </a>
 
             <p>Bag</p>
         </div>
+
+
     </header>
 
     <div class="main-container">
@@ -29,7 +44,8 @@
             <!-- ITEM 1 -->
             <div class="product-grid-item">
                 <div class="product-image">
-                    <img src="images/products/Virgil Tee Backsite.png" alt="">
+                    <img src="images/products/Virgil Tee Backsite.png" class="top-image" alt="">
+                    <img src="images/products/virgil-abloh-01-gq-30jul18_b.jpg" class="hover-image" alt="">
                 </div>
                 <div class="product-info">
                     <p class="product-title">Virgil Was Here T • White</p>
@@ -48,6 +64,17 @@
                 </div>
             </div>
             <!-- END -->            
+            <!-- ITEM 3 -->
+            <div class="product-grid-item">
+                <div class="product-image">
+                    <img src="images/products/Virgil Tee Backsite.png" alt="">
+                </div>
+                <div class="product-info">
+                    <p class="product-title">Virgil Was Here T • White</p>
+                    <h2 class="product-price">¢350.00</h2>
+                </div>
+            </div>
+            <!-- END -->    
 
         </div>
     </div>
@@ -56,6 +83,9 @@
         <p> <strong>The Future's Clear.</strong> </p>
     </footer>
         
+<!-- SCRIPTS -->
+    <script src="scripts/mobile-menu_bag.js"></script>
+
 
 </body>
 </html>
