@@ -142,97 +142,6 @@
       margin-top: -5px;
   }
 
-  #sub {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    /* z-index: 10; */
-
-    position: absolute;
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    right: 0%;
-    bottom: 0%;
-    margin: auto;
-    padding: 1em;
-
-    width: 40%;
-    height: fit-content;
-
-    outline: 2px solid var(--color-primary);
-    border-radius: 10px;
-
-    color: var(--color-primary);
-    background-color: var(--color-text);
-  }
-
-  .sub-form {
-    width: 100%;
-  }
-
-  .sub-form form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
-  }
-
-  .sub-form form input[type=email], .sub-form form input[type=text]   {
-    background-color: transparent;
-    border: solid 2px var(--color-primary);
-    border-radius: 10px;
-    outline: none;
-    color: var(--color-primary);
-    padding: 0 .5em;
-    width: 100%;
-    height: 3em;
-  }
-
-.sub-form form input[type=email]:is(:focus),  .sub-form form input[type=text]:is(:focus) {
-    background-color: transparent;
-}
-
-.sub-form form button[type=submit] {
-    background-color: transparent;
-    color: var(--color-primary);
-    padding: .5em 2em;
-
-    border: solid 2px var(--color-primary);
-    outline: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-
-.sub-close {
-    position: absolute;
-    top: 0;
-    right: .5em;
-
-    cursor: pointer;
-
-    font-size: 20px;
-}
-
-#sub-bg {
-    position: absolute;
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    z-index: 24;
-
-    width: 100%;
-    height: 100%;
-
-    background-color: var(--color-text);
-    opacity: 90%;
-}
-
 .info-wrapper, .sub-wrapper {
     display: flex;
     flex-direction: column;
@@ -273,11 +182,11 @@
     /* background-color: var(--color-text); */
   }
 
-  .subscribe-two .sub-form {
+  .subscribe-two .sub-home-form {
     width: 100%;
   }
 
-  .subscribe-two .sub-form form {
+  .subscribe-two .sub-home-form form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -285,7 +194,7 @@
     gap: 1em;
   }
 
-  .subscribe-two .sub-form form input[type=email], .sub-form form input[type=text]   {
+  .subscribe-two .sub-home-form form input[type=email], .sub-home-form form input[type=text]   {
     background-color: transparent;
     border: solid 2px var(--color-text);
     border-radius: 10px;
@@ -296,11 +205,11 @@
     height: 3em;
   }
 
-  .subscribe-two .sub-form form input[type=email]:is(:focus),  .sub-form form input[type=text]:is(:focus) {
+  .subscribe-two .sub-home-form form input[type=email]:is(:focus),  .sub-home-form form input[type=text]:is(:focus) {
     background-color: transparent;
 }
 
-.subscribe-two .sub-form form button[type=submit] {
+.subscribe-two .sub-home-form form button[type=submit] {
     background-color: transparent;
     color: var(--color-text);
     padding: .5em 2em;
