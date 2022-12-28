@@ -68,7 +68,6 @@
         height: 100%;
 
         background-color: var(--color-secondary);
-        transition: 0.3s ease-in-out;
     }
 
     .mobile-menu ul {
@@ -266,6 +265,19 @@
     
         /* background-color: var(--color-text); */
         backdrop-filter: blur(20px);
+    }
+
+    .info-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 7em 0;
+    }
+
+    .info-wrapper a {
+        color: var(--color-text);
     }
 
     footer {

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/desktop.css">
+    <title>Vision'97 — Aeliza</title>
+</head>
+<body>
+    <div class="mobile-menu" id="mob-menu">
+        <div class="mobile-menu-inner">
+            <ul>
+                <li><a href="#">Ghana Store</a></li>
+                <li><a href="information.html">Information</a></li>
+                <li><a href="#">Lookbook</a></li>
+                <li><a href="#">Subscribe</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+    <header>
+        <div class="mobile-header">
+            <i class="menu-button" onclick="toggleNav()">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </i>
+            <a href="index.html">
+                <img src="images/Vision97LogoW.svg" alt="" width="200px">
+            </a>
+
+            <p>Bag</p>
+        </div>
+
+        <div class="desktop-header">
+            <div class="left-menu">
+                <ul>
+                    <li><a href="#">Ghana Store</a></li>
+                    <li><a href="information.html">Information</a></li>
+                    <li><a href="#">Lookbook</a></li>
+                </ul>
+            </div>
+
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Vision97LogoW.svg" alt="" width="200px">
+                </a>
+            </div>
+
+            <div class="right-menu">
+                <ul>
+                    <li><a href="#">Subscribe</a></li>
+                    <li><a href="#">Bag</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+    </header>
+
+    <div class="main-container">
+
+          <div class="info-wrapper">
+            <p>
+                <h3>Shipping Rates</h3>
+                Worldwide shipping available. <br>
+                Free shipping for international orders over $US150. <br>
+                $US25 shipping for International orders under $US150. 
+                <br>
+                <br>
+                <h3>Order Processing</h3>
+                Please allow 7-10 business days to process orders. <br>
+                Once order is shipped, you will receive a tracking number via email. <br> 
+                Please allow 10-15 days to arrive once shipped. <br>
+                We are not responsible for any lost or stolen packages. <br>
+                If you have any questions regarding your order email <a href="mailto:info@vision97.vision">info@vision97.vision.</a>
+                <br>
+                <br>
+                <h3>Return Policy</h3>
+                All sales are final. No refunds or exchanges. <br>
+                If you were sent the wrong item or if the product is defective contact us via email <a href="mailto:info@vision97.vision">info@vision97.vision.</a>
+                </p>
+          </div>
+
+    </div>
+
+        <div class="subscribe" id="sub-bg">
+            <div class="subscribe" id="sub">
+                <div class="subs-logo">
+                    <img src="images/Vision97LogoW.svg" alt="" width="150px">
+                </div>
+                <div class="sub-close">
+                    <i class="ti ti-x" onclick="closeSub()"></i>
+                </div>
+                <div class="sub-form">
+                    <form action="" method="post">
+                        <label for="sub-email">Email Address</label>
+                        <input type="email" name="sub-email" id="country">
+    
+                        <label for="sub-country">Country</label>
+                        <input type="text" name="sub-country" id="country">
+    
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+    <footer>
+        <div class="social-icon">
+            <a href="https://www.instagram.com/vision97.vision" target="_blank"><i class="ti ti-brand-instagram"></i></a>
+        </div>
+
+        <p> <strong>The Future's Clear.</strong> </p>
+
+        <div class="social-icon">
+            <a href="https://discord.gg/r25ew3St" target="_blank"><i class="ti ti-brand-discord"></i></a>
+        </div>
+    </footer>
+        
+<!-- SCRIPTS -->
+    <script src="scripts/mobile-menu_bag.js"></script>
+
+
+</body>
+</html>

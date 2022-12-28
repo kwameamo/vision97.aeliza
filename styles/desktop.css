@@ -233,6 +233,19 @@
     backdrop-filter: blur(20px);
 }
 
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 7em 0;
+}
+
+.info-wrapper a {
+    color: var(--color-text);
+}
+
 
 footer {
     position: fixed;
