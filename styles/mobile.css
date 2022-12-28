@@ -68,6 +68,7 @@
         height: 100%;
 
         background-color: var(--color-secondary);
+        transition: 0.3s ease-in-out;
     }
 
     .mobile-menu ul {
