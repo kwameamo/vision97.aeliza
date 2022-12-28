@@ -142,37 +142,128 @@
       margin-top: -5px;
   }
 
+  #sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-  footer {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
+    /* z-index: 10; */
 
-      display: flex;
-      flex-direction: row;
+    position: absolute;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    margin: auto;
+    padding: 1em;
 
-      align-items: center;
-      justify-content: space-between;
-      text-align: center;
+    width: 40%;
+    height: fit-content;
 
-      padding: 1em 1em;
+    outline: 2px solid var(--color-primary);
+    border-radius: 10px;
 
-      color: var(--color-primary);
-
-      z-index: 10;
+    color: var(--color-primary);
+    background-color: var(--color-text);
   }
 
-  footer p {
-      font-size: 13.75px;
-      line-height: 1.5em;
+  .sub-form {
+    width: 100%;
   }
 
-  footer a {
-   font-size: 2.5em;
-   line-height: 1.5em;
+  .sub-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
 
-   text-decoration: none;
-   color: var(--color-primary);
+  .sub-form form input[type=email], .sub-form form input[type=text]   {
+    background-color: transparent;
+    border: solid 2px var(--color-primary);
+    border-radius: 10px;
+    outline: none;
+    color: var(--color-primary);
+    padding: 0 .5em;
+    width: 100%;
+    height: 3em;
+  }
+
+.sub-form form input[type=email]:is(:focus),  .sub-form form input[type=text]:is(:focus) {
+    background-color: transparent;
+}
+
+.sub-form form button[type=submit] {
+    background-color: transparent;
+    color: var(--color-primary);
+    padding: .5em 2em;
+
+    border: solid 2px var(--color-primary);
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.sub-close {
+    position: absolute;
+    top: 0;
+    right: .5em;
+
+    cursor: pointer;
+
+    font-size: 20px;
+}
+
+#sub-bg {
+    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 9;
+
+    width: 100%;
+    height: 100%;
+
+    /* background-color: var(--color-text); */
+    backdrop-filter: blur(20px);
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+
+    padding: 1em 1em;
+
+    color: var(--color-primary);
+
+    z-index: 10;
+}
+
+footer p {
+    font-size: 13.75px;
+    line-height: 1.5em;
+}
+
+footer a {
+    font-size: 2.5em;
+    line-height: 1.5em;
+
+    text-decoration: none;
+    color: var(--color-primary);
 }
 
 }

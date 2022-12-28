@@ -10,6 +10,11 @@
       document.getElementById("mob-menu").style.visibility = "hidden"; 
     }
 
+/*Close Subscribe*/ 
+  function closeSub() {
+    document.getElementById("sub-bg").style.display = "none"; 
+  }
+
 
   
 
