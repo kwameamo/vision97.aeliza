@@ -326,6 +326,40 @@
     .gallery-photos {
         scale: (-5);
     }
+
+    .product-page-grid {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-column-gap: 30px;
+        grid-row-gap: 20px;
+
+        text-align: center;
+    }
+
+    .product-page-image {
+        background-color: var(--color-text);
+        border-radius: 10px;
+        display: flex;
+
+        aspect-ratio: 4/5;
+
+        align-items: center;
+        justify-content: flex-start;
+
+        overflow: auto;
+        cursor: pointer;
+        scroll-snap-type: both mandatory;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .product-page-image img {
+        width: 100%;
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
+    }
     
 
     footer {
