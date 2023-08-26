@@ -346,12 +346,12 @@
         align-items: center;
         justify-content: flex-start;
 
-        overflow: auto;
+        overflow: auto !important;
         cursor: pointer;
         scroll-snap-type: both mandatory;
     }
 
-    ::-webkit-scrollbar {
+    .product-page-image::-webkit-scrollbar {
         display: none;
     }
 

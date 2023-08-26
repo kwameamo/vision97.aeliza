@@ -53,5 +53,9 @@ body, button, input, select, textarea {
     word-wrap: break-word;
 }
 
+.draggable {
+    touch-action: none;
+    user-select: none;
+  }
 
 
