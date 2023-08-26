@@ -56,6 +56,5 @@ body, button, input, select, textarea {
 .draggable {
     touch-action: none;
     user-select: none;
-  }
-
+}
 
